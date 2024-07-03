@@ -1,6 +1,33 @@
 .title {
   text-align: center;
-  margin-top: 20px;
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+.contenedor-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.contenedor-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+.img-card {
+  padding: 10px;
+  border-radius: 15px;
+}
+.card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.493);
+  transition: 0.3s ease-in-out;
 }

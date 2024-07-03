@@ -14,21 +14,28 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <header className="NavBar">
-      <Heading>!NiceSkin¡</Heading>
+      <Heading>
+        <Link to={"/"}>!NiceSkin¡</Link>
+      </Heading>
       <Menu>
         <MenuButton as={Button} rightIcon={<FaRegArrowAltCircleDown />}>
-          Filter
+          Categorias
         </MenuButton>
         <MenuList>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Create a Copy</MenuItem>
-          <MenuItem>Mark as Draft</MenuItem>
-          <MenuItem>Delete</MenuItem>
-          <MenuItem>Attend a Workshop</MenuItem>
+          <MenuItem>
+            <Link to="/categorias/coat">Abrigos</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/categorias/feet">Zapatillas</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/categorias/trousers">Pantalones</Link>
+          </MenuItem>
         </MenuList>
       </Menu>
       <CartWidget />
