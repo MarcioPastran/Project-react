@@ -1,8 +1,26 @@
 .NavBar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: rgba(195, 196, 141, 0.568);
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
   height: 60px;
-  margin-bottom: 15px;
+  padding: 0 20px;
+  border-radius: 27px;
+  z-index: 10;
+}
+.NavBar .hamburgesa {
+  display: none;
+}
+.menuButton:hover {
+  background-color: rgb(231, 235, 197);
+}
+@media screen and(width:360px) {
+  .NavBar .text-niceskin {
+    margin: 0;
+  }
 }

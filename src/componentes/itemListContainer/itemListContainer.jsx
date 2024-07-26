@@ -1,28 +1,41 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { getProduct, getProductByCategory } from "../../data/asyncMock";
 import ItemList from "../itemList/itemList";
 import { useParams } from "react-router-dom";
 import { BounceLoader } from "react-spinners";
+import { db } from "../../config/firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
+
 const itemListContainer = ({ title }) => {
   const [productos, setProductos] = useState([]);
   const { categoryId } = useParams();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const dataProductos = categoryId
-      ? getProductByCategory(categoryId)
-      : getProduct();
-    dataProductos
-      .then((prod) => setProductos(prod))
-      .catch((error) => console.log(error))
-      .finally(() => setLoading(false));
+    setLoading(true);
+    const getData = async () => {
+      const coleccion = collection(db, "productos");
+      const queryRef = !categoryId
+        ? coleccion
+        : query(coleccion, where("category", "==", categoryId));
+      const responce = await getDocs(queryRef);
+      const products = responce.docs.map((doc) => {
+        const newItem = {
+          ...doc.data(),
+          id: doc.id,
+        };
+        return newItem;
+      });
+      setProductos(products);
+      setLoading(false);
+    };
+    getData();
   }, [categoryId]);
   return (
-    <div>
+    <div className="body">
       <h1 className="title">{title}</h1>
       {loading ? (
         <div className="contenedor-load">
-          <BounceLoader color=" #c3c48d91" />
+          <BounceLoader color=" #cecece" />
         </div>
       ) : (
         <ItemList productos={productos} />

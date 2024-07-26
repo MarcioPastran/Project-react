@@ -1,12 +1,22 @@
-import React from "react";
-import { MdOutlineShoppingCart } from "react-icons/md";
+import { Flex, Badge } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import Context from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-  let count = 0;
+  const { getQuantity } = useContext(Context);
   return (
-    <div className="cart">
-      <MdOutlineShoppingCart />
-    </div>
+    <Flex mr={10}>
+      <Link to={"/cart"}>
+        <HiOutlineShoppingBag />
+      </Link>
+      <Flex>
+        <Badge bg={"transparent"} pos={"absolute"} top={"14px"}>
+          {getQuantity()}
+        </Badge>
+      </Flex>
+    </Flex>
   );
 };
 

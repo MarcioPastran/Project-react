@@ -1,122 +1,117 @@
+import image1 from "../assets/img/elegancia-color-ropa-ropa-ropa_1203-6544-removebg-preview.png";
+import image2 from "../assets/img/buso-azul-fotor-bg-remover-202406304511.png";
+import image3 from "../assets/img/sudadera-capucha-blanca-blanco-aislada-sobre-fondo-blanco_144962-17708-fotor-bg-remover-2024070845843.png";
+import image4 from "../assets/img/sudadera-capucha-negra-blanco-hombre-sudadera-capucha-manga-larga-hombre-maqueta-capucha_795881-1220-fotor-bg-remover-2024070845425.png";
+import image5 from "../assets/img/zapatos-correr-1-fotor-bg-remover-2024063045531.png";
+import image6 from "../assets/img/zapatillas-negras-sobre-fondo-blanco-vista-lateral-aislada_1102944-726-fotor-bg-remover-202407085844.png";
+import image7 from "../assets/img/botas-hombre-sobre-fondo-blanco_1102944-485-fotor-bg-remover-2024070851332.png";
+import image8 from "../assets/img/zapatos-correr-o-zapatillas-deporte-sobre-fondo-transparente_84443-1684-fotor-bg-remover-2024070852719.png";
+import image9 from "../assets/img/pantalones-carga-hombres-fondo-transparente-aislado_191095-17060-fotor-bg-remover-2024063045359.png";
+import image10 from "../assets/img/vaqueros-azules-aislados-sobre-fondo-transparente_191095-17283-fotor-bg-remover-2024063045440.png";
+import image11 from "../assets/img/pantalones-clasicos-fondo-blanco_153608-44653-fotor-bg-remover-2024070853236.png";
+
 export const product = [
   {
-    id: 1,
-    title: "Ptoducto 1",
-    imageUrl:
-      "https://img.freepik.com/foto-gratis/elegancia-color-ropa-ropa-ropa_1203-6544.jpg?t=st=1719875671~exp=1719879271~hmac=6ff1dcf3e0192fa896e8b51f4f5f0b668dd83c91c44288b25676042346ec4f2b&w=740",
+    title: "Producto 1",
+    imageUrl: image1,
     nombre: "Campera Rosada",
-    category: "coat",
-    price: 20.399,
-    descripcion: "Campera rosada de terciopelo",
+    category: "Abrigo",
+    price: 20399,
+    descripcion: "Campera terciopelo rosa mujer sin capucha",
     stock: 10,
   },
   {
-    id: 2,
-    title: "Ptoducto 2",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/sudadera-capucha-blanca-blanco-aislada-sobre-fondo-blanco_144962-17708.jpg?w=740",
+    title: "Producto 2",
+    imageUrl: image2,
+    nombre: "Buzo Azul",
+    category: "Abrigo",
+    price: 12999,
+    descripcion:
+      "Buzo canguro oversize azul liso de algodon premiun 100% frizado unisex",
+    stock: 10,
+  },
+  {
+    title: "Producto 3",
+    imageUrl: image3,
     nombre: "Buzo Blanco",
-    category: "coat",
-    price: 12.999,
-    descripcion: "buzo blanco sin bolsillos",
+    category: "Abrigo",
+    price: 15565,
+    descripcion:
+      "Buzo blanco sin bolsillos liso de algodon premiun 100% frizado unisex",
     stock: 10,
   },
   {
-    id: 3,
-    title: "Ptoducto 3",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/mockup-aislado-capucha-blanco-rojo-generado-ia_206846-3095.jpg?w=740",
-    nombre: "Buzo Bordo",
-    category: "coat",
-    price: 15.565,
-    descripcion: "Buzo bordo con bolsillos",
-    stock: 10,
-  },
-  {
-    id: 4,
-    title: "Ptoducto 4",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/sudadera-capucha-negra-blanco-hombre-sudadera-capucha-manga-larga-hombre-maqueta-capucha_795881-1220.jpg?w=740",
+    title: "Producto 4",
+    imageUrl: image4,
     nombre: "Buzo Negro",
-    category: "coat",
-    price: 13.999,
-    descripcion: "Buzo negro con bolsillos",
+    category: "Abrigo",
+    price: 13999,
+    descripcion:
+      "Buzo negro con bolsillos liso de algodon premiun 100% frizado unisex",
     stock: 10,
   },
   {
-    id: 5,
-    title: "Ptoducto 5",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/zapatos-correr-aislados-sobre-fondo-blanco_1102944-3562.jpg?w=740",
+    title: "Producto 5",
+    imageUrl: image5,
     nombre: "Zapatillas Deportivas",
-    category: "feet",
-    price: 24.835,
-    descripcion: "Zapatillas deportivas para correr",
+    category: "Zapatillas",
+    price: 24835,
+    descripcion: "Zapatillas deportivas running comodas y antideslizante",
     stock: 10,
   },
   {
-    id: 6,
-    title: "Ptoducto 6",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/zapatillas-negras-sobre-fondo-blanco-vista-lateral-aislada_1102944-726.jpg?w=740",
+    title: "Producto 6",
+    imageUrl: image6,
     nombre: "Zapatillas Urban",
-    category: "feet",
-    price: 25.999,
-    descripcion: "Zapatillas urbanas negras",
+    category: "Zapatillas",
+    price: 25999,
+    descripcion: "Zapatillas urbanas negras de vestir unisex",
     stock: 10,
   },
   {
-    id: 7,
-    title: "Ptoducto 7",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/botas-hombre-sobre-fondo-blanco_1102944-485.jpg?w=740",
+    title: "Producto 7",
+    imageUrl: image7,
     nombre: "Borcegos",
-    category: "feet",
-    price: 30.266,
-    descripcion: "Borcegos Nobuk",
+    category: "Zapatillas",
+    price: 30266,
+    descripcion: "Borcegos Nobuk de hombre caña alta acordonados",
     stock: 10,
   },
   {
-    id: 8,
-    title: "Ptoducto 8",
-    imageUrl:
-      "https://img.freepik.com/foto-gratis/ropa-blanca-elegancia-moderna_1203-6524.jpg?t=st=1719876702~exp=1719880302~hmac=b3244db66e0d2bc8be59a8f5f1c1449f0b1706cf8aeb33ca0646caab358e5c58&w=740",
-    nombre: "Pants sporty",
-    category: "trousers",
-    price: 10.566,
-    descripcion: "chaqueta purpura de cuero sintetico",
+    title: "Producto 8",
+    imageUrl: image8,
+    nombre: "Zapatillas Deportivas",
+    category: "Zapatillas",
+    price: 10566,
+    descripcion:
+      "Zapatillas deportivas negras running comodas y antideslizante",
     stock: 10,
   },
   {
-    id: 9,
-    title: "Ptoducto 9",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/nuevos-pantalones-piernas-anchas-aislados-sobre-fondo-blanco_94628-23572.jpg?w=826",
-    nombre: "Pantalon de Vestir",
-    category: "trousers",
-    price: 19.999,
-    descripcion: "Pantalon de vestir rectos color marron",
+    title: "Producto 9",
+    imageUrl: image9,
+    nombre: "Pantalon Cargo",
+    category: "Pantalones",
+    price: 19999,
+    descripcion: "Pantalon cargo de vestir rectos color marron",
     stock: 10,
   },
   {
-    id: 10,
-    title: "Ptoducto 10",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/par-vaqueros-boton-cremallera_1025556-52173.jpg?w=740",
-    nombre: "Jeans Azules",
-    category: "trousers",
-    price: 16.263,
-    descripcion: "Jeans azules wide leg",
+    title: "Producto 10",
+    imageUrl: image10,
+    nombre: "Pantalones Cargo",
+    category: "Pantalones",
+    price: 16263,
+    descripcion:
+      "Pantalones cargo rompe viento, regulable de cintura como de puños, unico color",
     stock: 10,
   },
   {
-    id: 11,
-    title: "Ptoducto 11",
-    imageUrl:
-      "https://img.freepik.com/fotos-premium/pantalones-clasicos-fondo-blanco_153608-44653.jpg?w=740",
+    title: "Producto 11",
+    imageUrl: image11,
     nombre: "Jeans Blancos",
-    category: "trousers",
-    price: 16.263,
+    category: "Pantalones",
+    price: 16263,
     descripcion: "Jeans mom blancos tiro alto",
     stock: 10,
   },
@@ -133,13 +128,14 @@ export const getProduct = () => {
 export const getProductByCategory = (category) => {
   return new Promise((resolve) => {
     const productosFiltrados = product.filter(
-      (prod) => prod.category === category
+      (prod) => prod.category.toLowerCase() === category.toLowerCase()
     );
     setTimeout(() => {
       resolve(productosFiltrados);
     }, 2000);
   });
 };
+
 export const getProductById = (id) => {
   return new Promise((resolve) => {
     const productoFiltrado = product.find((prod) => prod.id === parseInt(id));
