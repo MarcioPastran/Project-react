@@ -39,7 +39,7 @@ const NavBar = () => {
       <Flex
         ml={15}
         gap={3}
-        display={{ base: "none", md: "flex" }} // Show this on larger screens
+        display={{ base: "none", md: "flex" }}
         alignItems="center"
       >
         <Button as={Link} to="/inicio" bg={"transparent"} borderRadius={25}>
